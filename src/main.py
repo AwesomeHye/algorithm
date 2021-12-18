@@ -1,14 +1,10 @@
 import sys
+from baekjoon_1110 import baek
+from baekjoon_10818 import baek
+from baekjoon_2562 import baek
+from baekjoon_2577 import baek
 
-'''
-https://www.acmicpc.net/problem/10818
-최소, 최대
-'''
 if __name__ == '__main__':
-    n = int(sys.stdin.readline())
-    num_list = list(map(int, sys.stdin.readline().split()))
-
-    print(min(num_list), end=' ')
-    print(max(num_list))
+    baek()
 
 
