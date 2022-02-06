@@ -5,11 +5,12 @@ https://www.acmicpc.net/problem/1157
 단어 공부
 '''
 
-# todo 디버깅!! 값 틀림
 def baek():
-    s_list = list(input())
-    ignore_s_list = [s if ord(s) < 97 else chr(ord(s)-32) for s in s_list]
-    print(ignore_s_list)
+    # s_list = list(input())
+    # ignore_s_list = [s if ord(s) < 97 else chr(ord(s)-32) for s in s_list]
+    ignore_s_list = list(input().upper())
+
+    print(max(ignore_s_list))
 
     count_dic = {}
     for _ in ignore_s_list:
@@ -22,8 +23,7 @@ def baek():
 
     symbol = '?'
     first_value = 0
-    idx = 0
-    for key, value in sorted_count_dic:
+    for (idx, (key, value)) in enumerate(sorted_count_dic):
         if idx == 0:
             symbol = key
             first_value = value
@@ -31,9 +31,8 @@ def baek():
 
         if idx == 1 and value == first_value:
             symbol = '?'
-            break
 
-        idx += 1
+        break
 
     print(symbol)
 
