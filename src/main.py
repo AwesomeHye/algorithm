@@ -10,9 +10,12 @@ from baekjoon_4344 import baek
 from baekjoon_2675 import baek
 from baekjoon_1157 import baek
 from baekjoon_1152 import baek
-from baekjoon_2908 import baek
+from baekjoon_5622 import baek
+from baekjoon_2941 import baek
+from baekjoon_1316 import baek
 
 if __name__ == '__main__':
-    baek()
+    for i in range(10):
+        baek()
 
 
