@@ -13,6 +13,8 @@ from baekjoon_1152 import baek
 from baekjoon_5622 import baek
 from baekjoon_2941 import baek
 from baekjoon_1316 import baek
+from baekjoon_1712 import baek
+from baekjoon_2292 import baek
 
 if __name__ == '__main__':
     for i in range(10):
